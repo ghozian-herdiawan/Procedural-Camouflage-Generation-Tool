@@ -1,0 +1,25 @@
+{
+      "version": "1.0.1",
+      "url": "https://github.com/YOUR_NAME/PCGT/releases/download/v1.0.1/pcgt_engine.py",
+      "notes": "Fixed the PyVista clipping plane bug and added OTA support."
+    }
+    ```
+    * Scroll down and click the green **Commit changes** button.
+  
+  
+    Navigate back to the main page of your repository and click on the `version.json` file you just created.
+    * Look for a button near the top right of the file preview that says **Raw**. Click it.
+    * Your browser will load a plain text page containing only your JSON.
+    * Copy the URL from your browser's address bar. It will start with `https://raw.githubusercontent.com/...`
+  
+  
+    Open your `pcgt_launcher.py` script. Locate the `OTAUpdateWorker` class.
+    * Replace the placeholder URL with the raw URL you just copied.
+    
+    ```python
+    # Before
+    self.manifest_url = "https://raw.githubusercontent.com/YOUR_NAME/PCGT/main/version.json"
+    
+    # After
+    self.manifest_url = "https://raw.githubusercontent.com/GhozianVanya/PCGT/main/version.json" 
+    ```
