@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "v1.0.2",
   "url": "https://github.com/ghozian-herdiawan/Procedural-Camouflage-Generation-Tool/releases/download/v1.0.2/pcgt_engine.py",
   "notes": "General Optimization, Grid Sampling (Linear Interpolation), Splinter Camouflage Shape added, Randomize All and Randomize Color added"
 }
